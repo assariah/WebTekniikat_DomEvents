@@ -19,5 +19,5 @@ function KolmasFunktio(){
     button.style.height ="50px"
 }
 function neljäsFunktio(event){
-    console.log(event.deltaY) 
+    console.log(event.deltaY)
 }
