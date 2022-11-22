@@ -1,9 +1,11 @@
-let menu = document.getElementById("menu");
-let icon = document.querySelector("i");
+let button = document.querySelector("button");
+let field = document.getElementById("username");
 
+button.addEventListener("click", showUsername);
 
-icon.addEventListener("click", showMenu);
-
-function showMenu(){
-    menu.classList.toggle("show");
+function showUsername(){
+    let username = field.value;
+    let h = document.createElement("h3");
+    h.textContent = username;
+    document.body.appendChild(h);
 }
